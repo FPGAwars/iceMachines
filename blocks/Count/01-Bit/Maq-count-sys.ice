@@ -16,8 +16,7 @@
           "id": "4e8afe74-8f38-4873-97ee-f7585d99a4aa",
           "type": "basic.output",
           "data": {
-            "name": "Busy",
-            "virtual": false
+            "name": "Busy"
           },
           "position": {
             "x": 1520,
@@ -29,15 +28,7 @@
           "type": "basic.outputLabel",
           "data": {
             "blockColor": "fuchsia",
-            "name": "Busy",
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ],
-            "virtual": true
+            "name": "Busy"
           },
           "position": {
             "x": 1360,
@@ -80,8 +71,7 @@
           "id": "cc9caa6d-6225-44a7-b7f3-7b94d7e13ba0",
           "type": "basic.output",
           "data": {
-            "name": "n",
-            "virtual": false
+            "name": "n"
           },
           "position": {
             "x": 1520,
@@ -94,14 +84,6 @@
           "data": {
             "blockColor": "fuchsia",
             "name": "n",
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ],
-            "virtual": true,
             "oldBlockColor": "fuchsia"
           },
           "position": {
@@ -115,14 +97,6 @@
           "data": {
             "blockColor": "fuchsia",
             "name": "start",
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ],
-            "virtual": true,
             "oldBlockColor": "fuchsia"
           },
           "position": {
@@ -135,8 +109,7 @@
           "type": "basic.input",
           "data": {
             "name": "start",
-            "clock": false,
-            "virtual": false
+            "clock": false
           },
           "position": {
             "x": 216,
@@ -188,8 +161,7 @@
           "id": "8e23ac9a-675f-4e0c-9476-93c9fc2c3b79",
           "type": "basic.output",
           "data": {
-            "name": "done",
-            "virtual": false
+            "name": "done"
           },
           "position": {
             "x": 1520,
@@ -202,14 +174,6 @@
           "data": {
             "blockColor": "fuchsia",
             "name": "done",
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ],
-            "virtual": true,
             "oldBlockColor": "fuchsia"
           },
           "position": {
@@ -257,14 +221,6 @@
           "data": {
             "blockColor": "fuchsia",
             "name": "start",
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ],
-            "virtual": true,
             "oldBlockColor": "fuchsia"
           },
           "position": {
@@ -281,8 +237,8 @@
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": 944,
-            "y": 344
+            "x": 920,
+            "y": 312
           }
         },
         {
@@ -302,8 +258,8 @@
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": 1224,
-            "y": 408
+            "x": 1192,
+            "y": 376
           }
         },
         {
@@ -336,18 +292,6 @@
           "position": {
             "x": 944,
             "y": 136
-          },
-          "size": {
-            "width": 96,
-            "height": 64
-          }
-        },
-        {
-          "id": "c6c1d866-4eaf-4999-b429-3f73395a79fb",
-          "type": "c8ffff0c6db83755c69d6633413f8122e52a420c",
-          "position": {
-            "x": 1072,
-            "y": 408
           },
           "size": {
             "width": 96,
@@ -426,12 +370,24 @@
             "readonly": true
           },
           "position": {
-            "x": 1208,
-            "y": 392
+            "x": 1176,
+            "y": 360
           },
           "size": {
             "width": 176,
             "height": 40
+          }
+        },
+        {
+          "id": "7fe0b296-5112-4893-aa76-ee6c036a1088",
+          "type": "0165cbbf4536518049b2b0407d2e7659e409a021",
+          "position": {
+            "x": 1048,
+            "y": 376
+          },
+          "size": {
+            "width": 96,
+            "height": 64
           }
         }
       ],
@@ -465,17 +421,6 @@
           },
           "target": {
             "block": "44f00be7-85a4-44f3-b6b3-1b7f6eff1442",
-            "port": "inlabel"
-          },
-          "vertices": []
-        },
-        {
-          "source": {
-            "block": "c6c1d866-4eaf-4999-b429-3f73395a79fb",
-            "port": "1c25e08e-e664-4fab-9b30-cedc1f8a3739"
-          },
-          "target": {
-            "block": "6dc76e66-f19d-4758-9824-33a4ae3958d2",
             "port": "inlabel"
           },
           "vertices": []
@@ -516,7 +461,7 @@
             "port": "outlabel"
           },
           "target": {
-            "block": "c6c1d866-4eaf-4999-b429-3f73395a79fb",
+            "block": "7fe0b296-5112-4893-aa76-ee6c036a1088",
             "port": "2708468d-1088-4570-be63-fb0d4799a941"
           }
         },
@@ -564,6 +509,16 @@
         },
         {
           "source": {
+            "block": "7fe0b296-5112-4893-aa76-ee6c036a1088",
+            "port": "1c25e08e-e664-4fab-9b30-cedc1f8a3739"
+          },
+          "target": {
+            "block": "6dc76e66-f19d-4758-9824-33a4ae3958d2",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
             "block": "415a5e09-8ac8-4fb1-9308-2bcf18d7c584",
             "port": "664caf9e-5f40-4df4-800a-b626af702e62"
           },
@@ -606,13 +561,13 @@
             "port": "4e8afe74-8f38-4873-97ee-f7585d99a4aa"
           },
           "target": {
-            "block": "c6c1d866-4eaf-4999-b429-3f73395a79fb",
+            "block": "7fe0b296-5112-4893-aa76-ee6c036a1088",
             "port": "9ca5353b-32fd-4f1f-af0b-5339bd50b1ff"
           },
           "vertices": [
             {
-              "x": 928,
-              "y": 400
+              "x": 896,
+              "y": 376
             }
           ]
         }
@@ -2323,13 +2278,13 @@
         }
       }
     },
-    "c8ffff0c6db83755c69d6633413f8122e52a420c": {
+    "0165cbbf4536518049b2b0407d2e7659e409a021": {
       "package": {
-        "name": "Rising-edge-detector",
+        "name": "Falling-edge-detector",
         "version": "0.1",
-        "description": "Rising-edge detector. It generates a 1-period pulse (tic) when a rising edge is detected on the input",
+        "description": "Falling-edge detector. It generates a 1-period pulse (tic) when a falling edge is detected on the input",
         "author": "Juan González-Gómez (Obijuan)",
-        "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22185.363%22%20height=%22183.398%22%20viewBox=%220%200%2049.043981%2048.524089%22%3E%3Cg%20stroke-linecap=%22round%22%3E%3Cg%20fill=%22none%22%20stroke=%22#00f%22%3E%3Cpath%20d=%22M13.478%2032.434l6.026%207.975-5.054%206.03%201.749%201.556m-3.96-15.367l-3.5%207.976-7.97%201.555.583%202.529%22%20stroke-width=%221.058%22%20stroke-linejoin=%22round%22/%3E%3Cpath%20d=%22M12.773%2032.628V2.686%22%20stroke-width=%223.969%22/%3E%3Cpath%20d=%22M1.984%2012.436L12.673%201.984l10.35%2010.452%22%20stroke-width=%223.969%22%20stroke-linejoin=%22round%22/%3E%3C/g%3E%3Cg%20transform=%22matrix(.842%200%200%20.842%20-48.178%20-26.157)%22%20stroke=%22green%22%3E%3Ccircle%20r=%2214.559%22%20cy=%2273.815%22%20cx=%22100.602%22%20fill=%22#ececec%22%20stroke-width=%22.608%22%20stroke-linejoin=%22round%22/%3E%3Cpath%20d=%22M106.978%2082.142h-3.353V63.316H97.54v18.678h-3.652%22%20fill=%22none%22%20stroke-width=%221.521%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+        "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22185.363%22%20height=%22183.398%22%20viewBox=%220%200%2049.043981%2048.524089%22%3E%3Cg%20stroke-linecap=%22round%22%3E%3Cpath%20d=%22M13.478%2032.434l6.026%207.975-5.054%206.03%201.749%201.556m-3.96-15.367l-3.5%207.976-7.97%201.555.583%202.529%22%20fill=%22none%22%20stroke=%22#00f%22%20stroke-width=%221.058%22%20stroke-linejoin=%22round%22/%3E%3Cpath%20d=%22M12.773%201.984v29.943%22%20fill=%22none%22%20stroke=%22#00f%22%20stroke-width=%223.969%22/%3E%3Cpath%20d=%22M1.984%2022.176l10.689%2010.452%2010.35-10.452%22%20fill=%22none%22%20stroke=%22#00f%22%20stroke-width=%223.969%22%20stroke-linejoin=%22round%22/%3E%3Cg%20transform=%22matrix(.842%200%200%20.842%20-48.178%20-26.157)%22%20stroke=%22green%22%3E%3Ccircle%20r=%2214.559%22%20cy=%2273.815%22%20cx=%22100.602%22%20fill=%22#ececec%22%20stroke-width=%22.608%22%20stroke-linejoin=%22round%22/%3E%3Cpath%20d=%22M106.978%2082.142h-3.353V63.316H97.54v18.678h-3.652%22%20fill=%22none%22%20stroke-width=%221.521%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
       },
       "design": {
         "graph": {
@@ -2342,7 +2297,7 @@
                 "clock": true
               },
               "position": {
-                "x": 152,
+                "x": 88,
                 "y": 152
               }
             },
@@ -2354,7 +2309,7 @@
                 "clock": false
               },
               "position": {
-                "x": 152,
+                "x": 88,
                 "y": 280
               }
             },
@@ -2365,8 +2320,8 @@
                 "name": ""
               },
               "position": {
-                "x": 840,
-                "y": 400
+                "x": 688,
+                "y": 280
               }
             },
             {
@@ -2385,8 +2340,8 @@
               "id": "dd46675b-cc63-4048-8a37-c684913c3514",
               "type": "35f267d0df6ffcb7fc33753bc9df9cf083642cca",
               "position": {
-                "x": 552,
-                "y": 264
+                "x": 312,
+                "y": 400
               },
               "size": {
                 "width": 96,
@@ -2397,8 +2352,8 @@
               "id": "5b898222-8c0c-4e10-8a92-2b8734c87693",
               "type": "b2090f68ef94fd3c5c0eaea93eb6ba7e80aff0b6",
               "position": {
-                "x": 696,
-                "y": 400
+                "x": 544,
+                "y": 280
               },
               "size": {
                 "width": 96,
@@ -2409,12 +2364,12 @@
               "id": "49c0a94e-2687-4aa4-8cba-327b2942095f",
               "type": "basic.info",
               "data": {
-                "info": "## Rising edge detector\n\nIt generates a 1-period pulse (tic) when a rising edge is detected on the  \ninput signal",
+                "info": "## Falling edge detector\n\nIt generates a 1-period pulse (tic) when a falling edge is detected on the  \ninput signal",
                 "readonly": true
               },
               "position": {
-                "x": 176,
-                "y": -16
+                "x": 104,
+                "y": -40
               },
               "size": {
                 "width": 568,
@@ -2429,7 +2384,7 @@
                 "readonly": true
               },
               "position": {
-                "x": 160,
+                "x": 96,
                 "y": 256
               },
               "size": {
@@ -2445,7 +2400,7 @@
                 "readonly": true
               },
               "position": {
-                "x": 168,
+                "x": 104,
                 "y": 120
               },
               "size": {
@@ -2461,8 +2416,8 @@
                 "readonly": true
               },
               "position": {
-                "x": 328,
-                "y": 456
+                "x": 192,
+                "y": 368
               },
               "size": {
                 "width": 168,
@@ -2489,12 +2444,12 @@
               "id": "fde5c436-d382-48e7-80b5-390c05f46b9d",
               "type": "basic.info",
               "data": {
-                "info": "If the current signal is 1 and its value in  \nthe previous clock cycle was 0, it means  \nthat a rising edge has been detected!  \nThe output es 1\n\nIn any other case the output is 0",
+                "info": "If the current signal is 0 and its value in  \nthe previous clock cycle was 1, it means  \nthat a falling edge has been detected!  \nThe output es 1\n\nIn any other case the output is 0",
                 "readonly": true
               },
               "position": {
-                "x": 728,
-                "y": 256
+                "x": 560,
+                "y": 136
               },
               "size": {
                 "width": 344,
@@ -2505,12 +2460,12 @@
               "id": "c3990bfd-57a6-4602-ab46-800486326dd6",
               "type": "basic.info",
               "data": {
-                "info": "**Delay**: 0 clock cycles \n\nThere is no delay between the arrival of a rising edge  \nand its detection",
+                "info": "**Delay**: 0 clock cycles \n\nThere is no delay between the arrival of a falling edge  \nand its detection",
                 "readonly": true
               },
               "position": {
-                "x": 528,
-                "y": 504
+                "x": 224,
+                "y": 488
               },
               "size": {
                 "width": 416,
@@ -2541,22 +2496,12 @@
             },
             {
               "source": {
-                "block": "71397c49-5476-4a34-a914-7ec7f07fbf10",
-                "port": "aa84d31e-cd92-44c7-bb38-c7a4cd903a78"
-              },
-              "target": {
-                "block": "dd46675b-cc63-4048-8a37-c684913c3514",
-                "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
-              }
-            },
-            {
-              "source": {
-                "block": "dd46675b-cc63-4048-8a37-c684913c3514",
+                "block": "5b898222-8c0c-4e10-8a92-2b8734c87693",
                 "port": "664caf9e-5f40-4df4-800a-b626af702e62"
               },
               "target": {
-                "block": "5b898222-8c0c-4e10-8a92-2b8734c87693",
-                "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
+                "block": "1c25e08e-e664-4fab-9b30-cedc1f8a3739",
+                "port": "in"
               }
             },
             {
@@ -2565,18 +2510,28 @@
                 "port": "out"
               },
               "target": {
-                "block": "5b898222-8c0c-4e10-8a92-2b8734c87693",
-                "port": "97b51945-d716-4b6c-9db9-970d08541249"
+                "block": "dd46675b-cc63-4048-8a37-c684913c3514",
+                "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
               }
             },
             {
               "source": {
+                "block": "71397c49-5476-4a34-a914-7ec7f07fbf10",
+                "port": "aa84d31e-cd92-44c7-bb38-c7a4cd903a78"
+              },
+              "target": {
                 "block": "5b898222-8c0c-4e10-8a92-2b8734c87693",
+                "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
+              }
+            },
+            {
+              "source": {
+                "block": "dd46675b-cc63-4048-8a37-c684913c3514",
                 "port": "664caf9e-5f40-4df4-800a-b626af702e62"
               },
               "target": {
-                "block": "1c25e08e-e664-4fab-9b30-cedc1f8a3739",
-                "port": "in"
+                "block": "5b898222-8c0c-4e10-8a92-2b8734c87693",
+                "port": "97b51945-d716-4b6c-9db9-970d08541249"
               }
             }
           ]
