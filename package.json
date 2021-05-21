@@ -1,0 +1,19 @@
+{
+  "name": "icemachines",
+  "version": "0.1.0",
+  "description": "Working with machines",
+  "wiki": "https://github.com/FPGAwars/iceMachines/wiki",
+  "keywords": ["machines","sequential","state"],
+  "license": "GPL-2.0",
+  "authors": [{
+    "name": "Juan Gonzalez-Gomez (Obijuan)",
+    "email": "",
+    "url": "https://github.com/Obijuan"
+  }],
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "branch": "main",
+    "url": "https://github.com/FPGAwars/iceMachines"
+  }
+}
