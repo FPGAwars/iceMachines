@@ -328,7 +328,7 @@
           "id": "e1a9eff4-1b1b-4cde-b54b-3c814a6153d6",
           "type": "basic.info",
           "data": {
-            "info": "## Example 1: 2-bit2 System Counter machine: Manual testing with Buttons and LEDs\n\nWhen the button is pressed, the machine is started. It counts from 0  \nto 3 and stops. Therefore it only has 4 states (n=0 to n=3). The busy  \nsignal remains active for 4 clock periods. The input from one  \nsystem T-flip-flop is capture in the D-flip-flops at cycles 0-3\n\nThe 4-bits value capture in the Flip-flops is either \"1010\" or \"0101\"  \n(it can never happen to capture a different value\")",
+            "info": "## Example 1: 2-bits System Counter machine: Icerok measuring\n\nA 1-bit counter is sampled 4 times and the results are shown on the LEDs  \nThe signals of the 2-bits machines are read by the icerok analycer",
             "readonly": true
           },
           "position": {
@@ -336,8 +336,8 @@
             "y": -104
           },
           "size": {
-            "width": 560,
-            "height": 224
+            "width": 576,
+            "height": 96
           }
         },
         {
